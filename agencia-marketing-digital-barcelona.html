@@ -280,9 +280,16 @@
             -moz-border-radius: 10px 10px 10px 10px;
             -webkit-border-radius: 10px 10px 10px 10px;
             border: 0px solid #000000;
-            
+            filter: blur(10px);
+            background: inherited;
+            box-shadow: inset 0 0 0 200px rgba(255,255,255,0.3);
 
         }
+        
+        #form div{
+            
+        }
+        
     </style>
 </head>
 
@@ -308,6 +315,7 @@
         </div>
 
         <div id="form">
+            <div>
             <p>Cuéntanos sobre tu negocio ¡Es gratis!</p>
             <form method="post" action="#">
                 <input id="nombre" type="text" name="name" required autofocus><br>
@@ -316,6 +324,7 @@
                 <input id="consulta" type="text" name="consulta"><br>
 
                 <button type="submit" id="enviar">Dinos hola!</button> </form>
+            </div>
         </div>
     </div>
     <section>

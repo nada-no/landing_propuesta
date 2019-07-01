@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8" content="text/html">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-    
+
     <style>
         /*CSS RESET -----------------------------------------*/
 
@@ -211,7 +211,7 @@
             padding-left: 10vw;
             padding-right: 10vw;
             height: 95px;
-         
+
         }
 
 
@@ -224,15 +224,15 @@
             font-size: 3em;
             font-family: 'Work Sans', Arial, Helvetica, sans-serif;
             font-weight: bolder;
-            
+
         }
 
         p {
             font-family: 'Montserrat', Helvetica, sans-serif;
 
         }
-        
-        label{
+
+        label {
             display: none;
         }
 
@@ -257,59 +257,106 @@
             grid-row-end: 3;
             justify-self: center;
             width: 40vw;
+            text-shadow: 0 0 2px white;
         }
-        
-        #claim p, #claim h1 {
-                        text-align: right;
-                        color: rgba(124, 206, 244, 1);
+
+        #claim p,
+        #claim h1 {
+            text-align: right;
+            color: rgba(124, 206, 244, 1);
 
 
         }
-        
+
         #claim p {
             font-size: 30px;
             padding-top: 20px;
         }
-        
+
 
         #form {
             grid-column-start: 3;
             grid-column-end: 3;
             grid-row-start: 1;
             grid-row-end: 3;
-            align-self: center;
-            padding: 20px;
+            align-self: flex-end;
+            padding: 30px;
             border-radius: 10px 10px 10px 10px;
             -moz-border-radius: 10px 10px 10px 10px;
             -webkit-border-radius: 10px 10px 10px 10px;
             border: 0px solid #000000;
-            height: 50vh;
-            
+            text-align: center;
+
             background-color: rgba(255, 255, 255, 0.4);
-                
-backdrop-filter: blur(8px); /*SOLO FUNCIONA SI SE ACTIVA EXPLICITAMENTE EN CHROME!!!*/
+
+            backdrop-filter: blur(8px);
+            /*SOLO FUNCIONA SI SE ACTIVA EXPLICITAMENTE EN CHROME!!!*/
 
         }
-        
-        #form p{
+
+        #form p {
             font-size: 25px;
+
+        }
+
+        #form input {
+
+            margin-top: 5%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #nombre {
+            width: 89%;
+            height: 25px;
+        }
+
+        #telefono {
+            width: 44%;
+            height: 25px;
+
+        }
+
+        #email {
+            width: 44%;
+            height: 25px;
+        }
+
+        #consulta {
+            width: 89%;
+            height: 90px;
+
+        }
+
+        #enviar {
+            width: 90%;
+            margin: 20px;
+            height: 35px;
+            background-color: rgba(124, 206, 244, 1);
+            border: none;
+            border-radius: 15px 15px 15px 15px;
+            -moz-border-radius: 15px 15px 15px 15px;
+            -webkit-border-radius: 15px 15px 15px 15px;
+            color: white;
+            font-family: 'Montserrat', Helvetica, sans-serif;
+            font-size: 20px;
             
         }
         
-        #form input{
+        #enviar:hover{
             
-            margin: 10px;
-            width: 100%;
+            background-color: black;
         }
+        
         
     </style>
 </head>
 
 <body>
     <video autoplay muted loop id="myVideo">
-            <source src="Abstract%20-%2020072.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
+        <source src="Abstract%20-%2020072.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
     <header>
         <div class="logo"><img src="https://xpertix.com/agencia-marketing-digital-barcelona/img/logo.png"></div>
 
@@ -320,30 +367,30 @@ backdrop-filter: blur(8px); /*SOLO FUNCIONA SI SE ACTIVA EXPLICITAMENTE EN CHROM
     </header>
 
     <div class="imagen">
-        
+
         <div id="claim">
             <h1>Tu agencia de Marketing Digital en Barcelona</h1>
             <p>Sin un plan no podrás alcanzar tus metas. Tu decides los objetivos, nosotros te asesoramos para conseguirlos.</p>
         </div>
 
         <div id="form">
-            
+
             <p>Cuéntanos sobre tu negocio ¡Es gratis!</p>
             <form method="post" action="#">
                 <label for="name">Nombre</label>
                 <input id="nombre" type="text" name="name" required autofocus placeholder="Nombre"><br>
-                                <label for="phone">Teléfono</label>
+                <label for="phone">Teléfono</label>
 
                 <input id="telefono" type="number" name="phone" required placeholder="Teléfono">
-                                <label for="email">Email</label>
-<input id="email" type="email" name="email" required placeholder="Email"><br>
-                               <label for="consulta">Consulta</label>
- <input id="consulta" type="text" name="consulta" placeholder="Cuéntanos un poco..."><br>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" required placeholder="Email"><br>
+                <label for="consulta">Consulta</label>
+                <input id="consulta" type="text" name="consulta" placeholder="Cuéntanos un poco..."><br>
 
                 <button type="submit" id="enviar">Dinos hola!</button> </form>
-            </div>
         </div>
-    
+    </div>
+
     <section>
         <h1>Cómo lo hacemos</h1>
         <p>Para conseguir tus objetivos de negocio en el entorno online es vital un plan de marketing digital. Tener una meta, una estrategia y un plan de acción para alcanzarlos.</p>

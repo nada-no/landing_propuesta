@@ -186,10 +186,39 @@
 
         .logo {
             float: left;
+            filter: invert(100);
+            padding-top: 10px; 
         }
 
-        .phone {
+        .menu {
             float: right;
+        }
+
+        .menu ul {
+            list-style-type: none;
+        }
+
+        .menu li {
+            display: inline;
+            margin-left: 45px;
+            line-height: 65px;
+        }
+
+        .menu a {
+
+            text-decoration: none;
+            color: white;
+            font-family: 'Montserrat', Helvetica, sans-serif;
+            font-size: 20px;
+             -webkit-transition: color 2s; /* Safari prior 6.1 */
+  transition: color 2s;
+            
+        }
+        
+        .menu a:hover{
+            color: rgba(124, 206, 244, 1);
+
+            
         }
 
         .imagen {
@@ -340,15 +369,14 @@
             color: white;
             font-family: 'Montserrat', Helvetica, sans-serif;
             font-size: 20px;
-            
+
         }
-        
-        #enviar:hover{
-            
+
+        #enviar:hover {
+
             background-color: black;
         }
-        
-        
+
     </style>
 </head>
 
@@ -358,10 +386,14 @@
         Your browser does not support HTML5 video.
     </video>
     <header>
-        <div class="logo"><img src="https://xpertix.com/agencia-marketing-digital-barcelona/img/logo.png"></div>
+        <div class="logo"><a href=https://xpertix.com><img src="https://xpertix.com/agencia-marketing-digital-barcelona/img/logo.png"></a></div>
 
-        <div class="phone">
-            <p>LLÁMANOS HOY MISMO</p><br><span>93 187 58 00</span>
+        <div class="menu">
+            <ul>
+                <li><a href=#>Servicios</a></li>
+                <li><a href=#>Clientes</a></li>
+                <li><a href=#>Blog</a></li>
+            </ul>
         </div>
 
     </header>
@@ -385,7 +417,7 @@
                 <label for="email">Email</label>
                 <input id="email" type="email" name="email" required placeholder="Email"><br>
                 <label for="consulta">Consulta</label>
-                <input id="consulta" type="text" name="consulta" placeholder="Cuéntanos un poco..."><br>
+                <input id="consulta" type="text" name="consulta" placeholder="Explícanos tu proyecto..."><br>
 
                 <button type="submit" id="enviar">Dinos hola!</button> </form>
         </div>
@@ -398,4 +430,6 @@
     </section>
 
 
-</body></html>
+</body>
+
+</html>

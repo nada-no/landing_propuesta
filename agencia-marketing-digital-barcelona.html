@@ -178,6 +178,11 @@
             vertical-align: middle;
         }
 
+        input, textarea, button{
+            -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
+        }
 
 
         /*CLASES-------------------------------------*/
@@ -264,6 +269,12 @@
         label {
             display: none;
         }
+        
+        textarea, input{
+            
+            font-family: sans-serif;
+            color: grey;
+        }
 
 
         /*ID'S--------------------------------------------------------*/
@@ -328,7 +339,7 @@
 
         }
 
-        #form input {
+        #form input, #form textarea {
 
             margin-top: 5%;
             margin-right: auto;
@@ -336,30 +347,59 @@
         }
 
         #nombre {
-            width: 89%;
+            width: 100%;
             height: 25px;
+            background-color: white;
+  background-image: url('http://cdn.onlinewebfonts.com/svg/img_51277.png');
+  background-position: 2px 2px; 
+  background-repeat: no-repeat;
+  padding-left: 30px;
+              background-size: 20px 25px;
+            border: 1px;
+
+           
         }
+        
+        
 
         #telefono {
-            width: 44%;
+            width: 100%;
             height: 25px;
+            
+             background-color: white;
+  background-image: url('https://image.flaticon.com/icons/png/512/9/9243.png');
+  background-position: 2px 2px; 
+  background-repeat: no-repeat;
+  padding-left: 30px;
+              background-size: 20px 25px;
+                border: 1px;
 
         }
 
         #email {
-            width: 44%;
+            width: 100%;
             height: 25px;
+            
+                         background-color: white;
+  background-image: url('https://png.pngtree.com/svg/20160617/mail_122991.png');
+  background-position: 2px 2px; 
+  background-repeat: no-repeat;
+  padding-left: 30px;
+              background-size: 20px 25px;
+                border: 1px; 
         }
 
         #consulta {
-            width: 89%;
+            width: 100%;
             height: 90px;
+            padding: 5px;
 
+border: none;
         }
 
         #enviar {
-            width: 90%;
-            margin: 20px;
+            width: 100%;
+           margin-top: 20px;
             height: 35px;
             background-color: rgba(124, 206, 244, 1);
             border: none;
@@ -375,6 +415,11 @@
         #enviar:hover {
 
             background-color: black;
+            cursor: pointer;
+        }
+        
+        #formlanding{
+            text-align: center;
         }
 
     </style>
@@ -408,24 +453,49 @@
         <div id="form">
 
             <p>Cuéntanos sobre tu negocio ¡Es gratis!</p>
-            <form method="post" action="#">
+            <form id="formlanding" method="post" action="#">
                 <label for="name">Nombre</label>
                 <input id="nombre" type="text" name="name" required autofocus placeholder="Nombre"><br>
                 <label for="phone">Teléfono</label>
 
                 <input id="telefono" type="number" name="phone" required placeholder="Teléfono">
                 <label for="email">Email</label>
-                <input id="email" type="email" name="email" required placeholder="Email"><br>
+                <input id="email" type="email" name="email" required placeholder="Email">
                 <label for="consulta">Consulta</label>
-                <input id="consulta" type="text" name="consulta" placeholder="Explícanos tu proyecto..."><br>
+               <textarea rows="4" cols="50" name="consulta" form="formlanding" id="consulta">
+Explícanos tu proyecto...</textarea><br>
 
                 <button type="submit" id="enviar">Dinos hola!</button> </form>
         </div>
     </div>
 
     <section>
-        <h1>Cómo lo hacemos</h1>
-        <p>Para conseguir tus objetivos de negocio en el entorno online es vital un plan de marketing digital. Tener una meta, una estrategia y un plan de acción para alcanzarlos.</p>
+        <h2>Somos lo que hacemos</h2>
+        <p>Y nosotros todo lo que hacemos lo hacemos teniendo muy claras las cosas</p>
+        <div id="tarjetas">
+        <div>
+            <h3>Transparencia</h3>
+            <p>Te enviamos informes periódicos para el seguimiento de resultados y cumplimiento de objetivos </p>
+            </div>
+            
+            <div>
+            <h3>Disponibilidad</h3>
+            <p>Somos un equipo ágil. Nos adaptamos a las necesidades de cada cliente</p>
+            </div>
+            
+            <div>
+            <h3>Compromiso</h3>
+            <p>Nos implicamos en cada proyecto como si fuera nuestro. Generar valor para el cliente es clave </p>
+            </div>
+            
+            <div>
+            <h3>Experiencia</h3>
+            <p>Hemos implementado estrategias de Marketing Digital para diferentes sectores con soluciones efectivas </p>
+            </div>
+        
+        </div>
+        
+        
 
     </section>
 

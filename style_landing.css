@@ -549,15 +549,20 @@ h2 + p{
     height: auto;
 }
 
-#clientes div{
+#clientes>div{
 transform: skewY(-4deg);
      padding-left: 10vw;
         padding-right: 10vw;
 }
 
+#clientes>img{
+    display: inline-block;
+}
+
 #logos{
-    display: flex;
-    
+display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
         
 

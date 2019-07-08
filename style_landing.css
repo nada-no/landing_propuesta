@@ -565,4 +565,7 @@ display: flex;
     justify-content: space-around;
 }
         
-
+#mapa {
+    position: absolute;
+    
+}

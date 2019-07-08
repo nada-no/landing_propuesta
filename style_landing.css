@@ -247,10 +247,20 @@
     }
 
     .diagonal {
-        position: relative;
-        z-index: 30;
+     background-color: white;
+        height: auto;
+        transform: skewY(4deg);
+        transform-origin: top left;
+        width: 100%;
+        z-index: -1;
  
     }
+
+.diagonal>*{
+     transform: skewY(-4deg);
+        transform-origin: top left;
+    
+}
 
     .somos_bg {
         background-color: white;
@@ -258,7 +268,6 @@
         transform: skewY(4deg);
         transform-origin: top left;
         width: 100%;
-        position: absolute;
         z-index: -1;
     }
 
@@ -279,7 +288,10 @@
 
     }
 
-
+a {
+    color:inherit;
+    text-decoration: none;
+}
 
     body {
         background-color: white;
@@ -343,6 +355,37 @@ em{
 h2 + p{
     text-align: center;
 }
+
+footer{
+    background-color: black;
+    height: 140px;
+    color: white;
+    text-align: center;
+vertical-align: middle;
+    line-height: 100px;
+clear: both;
+}
+
+section>*{
+        padding-left: 10vw;
+        padding-right: 10vw;
+}
+
+ button {
+        width: 100%;
+        margin-top: 20px;
+        height: 35px;
+        background-color: rgba(124, 206, 244, 1);
+        border: none;
+        border-radius: 15px 15px 15px 15px;
+        -moz-border-radius: 15px 15px 15px 15px;
+        -webkit-border-radius: 15px 15px 15px 15px;
+        color: white;
+        font-family: 'Montserrat', Helvetica, sans-serif;
+        font-size: 20px;
+     cursor: pointer;
+
+    }
 
 
     /*ID'S--------------------------------------------------------*/
@@ -466,20 +509,6 @@ h2 + p{
         border: none;
     }
 
-    #enviar {
-        width: 100%;
-        margin-top: 20px;
-        height: 35px;
-        background-color: rgba(124, 206, 244, 1);
-        border: none;
-        border-radius: 15px 15px 15px 15px;
-        -moz-border-radius: 15px 15px 15px 15px;
-        -webkit-border-radius: 15px 15px 15px 15px;
-        color: white;
-        font-family: 'Montserrat', Helvetica, sans-serif;
-        font-size: 20px;
-
-    }
 
     #enviar:hover {
 
@@ -513,17 +542,13 @@ h2 + p{
    font-size: 2em;
     font-weight: bold;
     color: rgba(124, 206, 244, 1);
-    text-align: left
+    text-align: left;
 }
 
-  #somos_bg + h2 {
-                padding-top: 20vh;
+ h2 {
+     padding-top: 20vh;
     }
 
-#somos + div{
-     padding-left: 10vw;
-        padding-right: 10vw;
-}
 
 #servicios{
     background-image: linear-gradient(rgba(124, 206, 244, 0.5), rgba(124, 206, 244, 0.5)), url("gratisography-black-white-escalators.jpg");
@@ -532,28 +557,8 @@ h2 + p{
 
 }
 
-#servicios h2{
-    
-    color: white;
-    vertical-align: middle;
-}
 
 
-#clientes{
-    background-color: white;
-     transform: skewY(4deg);
-        transform-origin: top left;
-        width: 100%;
-        position: absolute;
-      
-    height: auto;
-}
-
-#clientes>div{
-transform: skewY(-4deg);
-     padding-left: 10vw;
-        padding-right: 10vw;
-}
 
 #clientes>img{
     display: inline-block;
@@ -566,6 +571,37 @@ display: flex;
 }
         
 #mapa {
-    position: absolute;
-    
+    background-color: rgba(124, 206, 244, 1);    
+    height: auto;
+    width: 100%;
+    text-align: center;
 }
+
+#map_responsive{
+          overflow:hidden;
+    padding-bottom:45vh;
+    position:relative;
+    height:0;
+}
+
+#mapa iframe{
+    margin: 0;
+     left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+#mapa p{
+    margin: 1em;
+}
+
+#mapa button{
+    background-color: black;
+    width: 50vw;
+margin-bottom: 2em;
+}
+
+
+

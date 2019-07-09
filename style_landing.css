@@ -185,8 +185,8 @@
 
     .logo {
         float: left;
-        filter: invert(100);
         padding-top: 10px;
+        filter: invert(100);
     }
 
     .menu {
@@ -211,12 +211,11 @@
         font-size: 20px;
         -webkit-transition: color 2s;
         /* Safari prior 6.1 */
-        transition: color 2s;
 
     }
 
     .menu a:hover {
-        color: rgba(124, 206, 244, 1);
+        text-decoration: underline;
 
 
     }
@@ -273,7 +272,6 @@
         z-index: -1;
     }
 
- 
 
 
 
@@ -287,6 +285,10 @@
         padding-left: 10vw;
         padding-right: 10vw;
         height: 95px;
+        position: fixed;
+        width: 79vw;
+        z-index: 200;
+        
 
     }
 
@@ -386,6 +388,8 @@ section>*{
         font-family: 'Montserrat', Helvetica, sans-serif;
         font-size: 20px;
      cursor: pointer;
+             transition: background-color 1s;
+
 
     }
 

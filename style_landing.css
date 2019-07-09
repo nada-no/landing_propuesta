@@ -248,18 +248,18 @@
     }
 
     .diagonal {
-     background-color: white;
         height: auto;
         transform: skewY(4deg);
         transform-origin: top left;
         width: 100%;
-        z-index: -1;
+        background-color: white;
  
     }
 
 .diagonal>*{
      transform: skewY(-4deg);
         transform-origin: top left;
+    z-index: 30;
     
 }
 
@@ -269,7 +269,6 @@
         transform: skewY(4deg);
         transform-origin: top left;
         width: 100%;
-        z-index: -1;
     }
 
 
@@ -393,6 +392,19 @@ section>*{
 
     }
 
+main{
+      background-image: url("gratisography-black-white-escalators.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 35%;
+    background-attachment: local
+    width: 100%;
+position: relative;
+    
+}
+
+
+
 
     /*ID'S--------------------------------------------------------*/
 
@@ -403,7 +415,7 @@ section>*{
         top: 0;
         min-width: 100%;
         min-height: 100%;
-        z-index: -10;
+        z-index: -1000;
 
     }
 
@@ -565,11 +577,22 @@ display: block;
 
 
 #servicios{
-    background-image: linear-gradient(rgba(124, 206, 244, 0.5), rgba(124, 206, 244, 0.5)), url("gratisography-black-white-escalators.jpg");
-    background-size: cover;
-    height: 600px; /*HEIGHT PROVISIONAL HASTA HACER EL SLIDER!!!*/
-
+  
+    height: 700px;
+   background-image: linear-gradient(rgba(124, 206, 244, 0.8), rgba(124, 206, 244, 0.8));
+      transform: skewY(4deg);
+        transform-origin: top left;
+    background-color: transparent;
+    
+    
+    
+    
+    
 }
+
+#servicios h2{
+    color:white;
+text-shadow: 0px 0px 5px rgba(150, 150, 150, 0.9);}
 
 
 

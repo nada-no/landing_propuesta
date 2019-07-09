@@ -225,8 +225,10 @@
         height: 100vh;
         display: grid;
         /*Establecemos un grid para colocar la parte del formulario ¡Hay que cambiarlo para pantallas pequeñas!*/
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 33% 33% 33%;
         grid-template-rows: 30% 30% 30%;
+        margin-right: auto;
+        margin-left: auto;
 
     }
 
@@ -393,7 +395,7 @@ section>*{
 
     #myVideo {
         position: fixed;
-        left: 0;
+        left: -20%;
         top: 0;
         min-width: 100%;
         min-height: 100%;
@@ -406,8 +408,8 @@ section>*{
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
-        justify-self: center;
-        width: 40vw;
+        justify-self: right;
+        width: 45vw;
         text-shadow: 0 0 2px white;
     }
 
@@ -429,19 +431,23 @@ section>*{
         grid-column-start: 3;
         grid-column-end: 3;
         grid-row-start: 1;
-        grid-row-end: 3;
-        align-self: flex-end;
-        padding: 30px;
+        grid-row-end: 4;
+    padding: 30px;
         border-radius: 10px 10px 10px 10px;
         -moz-border-radius: 10px 10px 10px 10px;
         -webkit-border-radius: 10px 10px 10px 10px;
         border: 0px solid #000000;
-        text-align: center;
 
         background-color: rgba(255, 255, 255, 0.4);
 
         backdrop-filter: blur(8px);
         /*SOLO FUNCIONA SI SE ACTIVA EXPLICITAMENTE EN CHROME!!!*/
+        
+        width: 22vw;
+        min-height: 20vh;
+        margin-left: auto;
+        margin-right: auto;
+     margin-top: 18vh;
 
     }
 
@@ -451,12 +457,16 @@ section>*{
     }
 
     #form input,
-    #form textarea {
+    #form textarea, #form img {
 
         margin-top: 5%;
         margin-right: auto;
         margin-left: auto;
     }
+
+ #form img {
+display: block;
+}
 
     #nombre {
         width: 100%;

@@ -272,6 +272,10 @@
     }
 
 
+.slider{
+    display: none;
+}
+
 
 
 
@@ -579,22 +583,11 @@ display: block;
 #servicios{
   
     height: 700px;
-   background-image: linear-gradient(rgba(124, 206, 244, 0.8), rgba(124, 206, 244, 0.8));
+   background-image: linear-gradient(rgba(124, 206, 244, 0.9), rgba(124, 206, 244, 0.9));
       transform: skewY(4deg);
         transform-origin: top left;
-    background-color: transparent;
-    
-    
-    
-    
-    
-}
-
-#servicios h2{
-    color:white;
-text-shadow: 0px 0px 5px rgba(150, 150, 150, 0.9);}
-
-
+    background-color: transparent;    
+    }
 
 
 #clientes>img{
@@ -640,5 +633,44 @@ display: flex;
 margin-bottom: 2em;
 }
 
+#servicios img{
+    float: left;
+    
+}
 
+#servicios{
+    color: white;
+text-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
+}
+
+#servicios>div>div>div{
+    float: right;
+    width: 55vw;
+    text-align: left;
+}
+
+#servicios h3{
+    font-size: 4em;
+    margin: 0;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+}
+
+#flechaiz{
+    position: absolute;
+    left: 1vw;
+    top: 20vw;
+    cursor: pointer;
+    
+    
+}
+
+#flechader{
+    position: absolute;
+right: 1vw;
+    top: 20vw;
+    cursor: pointer;
+    
+    
+}
 

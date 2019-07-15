@@ -1,3 +1,6 @@
+
+
+
 //JS PARA EL HEADER CAMBIANDO DE COLOR
 
 
@@ -24,6 +27,7 @@ showDivs(slideIndex);
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
+    // $(".slide").fadeIn();
 }
 
 function showDivs(n) {
@@ -34,5 +38,18 @@ function showDivs(n) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";  
+  x[slideIndex-1].style.display = "block"; 
+    
 }
+
+
+//FADE IN ESLOGAN PORTADA
+
+$(document).ready(function(){
+ 
+    $("h1").fadeIn("slow");
+  
+});
+
+
+

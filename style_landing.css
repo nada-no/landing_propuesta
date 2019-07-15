@@ -228,7 +228,7 @@
         grid-template-rows: 30% 30% 30%;
         margin-right: auto;
         margin-left: auto;
-
+        
     }
 
     .tarjetas {
@@ -236,6 +236,8 @@
         justify-content: space-evenly;
         margin: 0;
         padding: 0;
+        
+        
     }
 
     .tarjetas div {
@@ -270,13 +272,6 @@
         transform-origin: top left;
         width: 100%;
     }
-
-
-.slider{
-    display: none;
-}
-
-
 
 
 
@@ -400,13 +395,12 @@ main{
       background-image: url("gratisography-black-white-escalators.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: 0% 35%;
+    background-position: 0% 20%;
     background-attachment: local
     width: 100%;
 position: relative;
     
 }
-
 
 
 
@@ -430,15 +424,12 @@ position: relative;
         grid-row-end: 3;
         justify-self: right;
         width: 45vw;
-        text-shadow: 0 0 2px white;
     }
 
     #claim p,
     #claim h1 {
         text-align: right;
-        color: rgba(124, 206, 244, 1);
-
-
+        color: white;
     }
 
     #claim p {
@@ -464,7 +455,7 @@ position: relative;
         /*SOLO FUNCIONA SI SE ACTIVA EXPLICITAMENTE EN CHROME!!!*/
         
         width: 22vw;
-        min-height: 20vh;
+        height: 40vh;
         margin-left: auto;
         margin-right: auto;
      margin-top: 18vh;
@@ -565,6 +556,7 @@ display: block;
     width: 30vw;
     margin: 2vw;
     text-align: right;
+    margin-bottom: 6vw;
 }
 
 
@@ -582,22 +574,20 @@ display: block;
 
 #servicios{
   
-    height: 700px;
    background-image: linear-gradient(rgba(124, 206, 244, 0.9), rgba(124, 206, 244, 0.9));
       transform: skewY(4deg);
         transform-origin: top left;
     background-color: transparent;    
     }
 
-
-#clientes>img{
-    display: inline-block;
-}
-
 #logos{
 display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+#logos img{
+    width: 250px;
 }
         
 #mapa {
@@ -633,44 +623,28 @@ display: flex;
 margin-bottom: 2em;
 }
 
-#servicios img{
-    float: left;
+#mapa button:hover{
+    position: relative;
     
+    top: -1px;
+-webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
 }
+
+
+
 
 #servicios{
     color: white;
 text-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
 }
 
-#servicios>div>div>div{
-    float: right;
-    width: 55vw;
-    text-align: left;
-}
 
-#servicios h3{
-    font-size: 4em;
-    margin: 0;
-    margin-bottom: 3vw;
-    margin-top: 3vw;
-}
 
-#flechaiz{
-    position: absolute;
-    left: 1vw;
-    top: 20vw;
-    cursor: pointer;
-    
-    
-}
+/*-----MEDIA QUERIES-------*/
 
-#flechader{
-    position: absolute;
-right: 1vw;
-    top: 20vw;
-    cursor: pointer;
-    
-    
-}
+
+
+
 

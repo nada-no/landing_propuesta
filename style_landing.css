@@ -417,6 +417,10 @@ position: relative;
 
     }
 
+#logo_mini{
+    display: none;
+}
+
     #claim {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -558,6 +562,7 @@ display: block;
     text-align: right;
     margin-bottom: 6vw;
 }
+
 
 
 #titular{
@@ -733,6 +738,13 @@ text-align: justify;
     
     #logos img{
     width: 100px;
+}
+    
+    #logo_mini{
+display: block;
+        text-align: center;
+        filter: invert(100);
+        
 }
     
   #servicios{

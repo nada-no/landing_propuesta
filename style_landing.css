@@ -226,9 +226,6 @@
         /*Establecemos un grid para colocar la parte del formulario ¡Hay que cambiarlo para pantallas pequeñas!*/
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: 30% 30% 30%;
-        margin-right: auto;
-        margin-left: auto;
-        
     }
 
     .tarjetas {
@@ -278,8 +275,11 @@
 
     /*ELEMENTOS---------------------------------------------*/
 
-
-    header {
+html{
+    scroll-behavior: smooth;
+}
+   
+header {
         padding-left: 10vw;
         padding-right: 10vw;
         height: 95px;
@@ -360,7 +360,7 @@ h2 + p{
 
 footer{
     background-color: black;
-    height: 140px;
+    height: auto;
     color: white;
     text-align: center;
 vertical-align: middle;
@@ -620,6 +620,7 @@ display: flex;
 #mapa button{
     background-color: black;
     width: 50vw;
+    height: auto;
 margin-bottom: 2em;
 }
 
@@ -644,6 +645,143 @@ text-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
 
 /*-----MEDIA QUERIES-------*/
 
+@media only screen and (max-width: 768px) {
+ 
+    header{
+        width: auto;
+        display: none;
+    }
+    
+    p{
+        font-size: 12px;
+    }
+    
+    main{
+         background-image: none;
+        background-color: white;
+
+    }
+    
+    h1, h2{
+        font-size: 2em;
+    }
+     
+    h3{
+    font-size: 1em;
+    }
+    
+    h2{
+                  padding-top: 14vh;
+        padding-bottom: 5vh;
+    }
+    
+    footer{
+        line-height: normal;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        
+    }
+    
+    /*ID'S */
+    
+    #claim p{
+    font-size: 20px;
+    }
+    
+    #form p{
+        font-size: 20px;
+    }
+    
+    #form{
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 6vw;
+        padding: 3vw;
+        margin-bottom: 20%;
+    }
+    
+    #claim{
+        display: block;
+    width: auto;
+        height: auto;
+      
+        text-align: center;
+        margin-top: 50%;
+        margin-bottom: 50%;
+        padding-left: 6vw;
+            padding-right: 6vw;
+        
+    }
+    
+    #myVideo {
+        left: -70%;
+    }
+    
+    #titular{
+        font-size: 20px;
+    }
+    
+    #somos{
+        display: block;
+    }
+    
+    #somos div{
+    width: auto;
+text-align: justify;
+}
+    
+    #logos img{
+    width: 100px;
+}
+    
+  #servicios{
+  
+  background-color: rgba(124, 206, 244, 1);  
+    }
+     
+    #servicios p{
+        text-align: justify;
+    }
+    
+    /*CLASESEEES*/
+    
+    .imagen{
+        display: block;
+        text-align: center;
+        height: auto;
+        
+    }
+    
+    .diagonal{
+        height: auto;
+    }
+    
+    .tarjetas {
+        display: block;
+text-align: center;
+        margin: 0;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        padding: 0;
+    }
+    
+     .tarjetas div {
+        width: auto;
+        text-align: center;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+
+
+    }
+    
+    #mapa button{
+width: 100%;
+    padding: 2vh;
+    }
+    
+    
+} 
 
 
 

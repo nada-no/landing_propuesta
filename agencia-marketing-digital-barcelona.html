@@ -10,7 +10,15 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
 
     <link href="style_landing.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+<script src="https://unpkg.com/jquery-aniview@1.0.1/dist/jquery.aniview.js"
+integrity="sha384-zDA6q/t525x7f6KD/OaOe24vCxSPU3eraILc2NU+ZA7ISsc3ExQbj8PB56FRMq6H"
+crossorigin="anonymous"></script>
+
+        <script src="landing.js" language="javascript" type="text/javascript"></script>
 
 </head>
 
@@ -36,8 +44,8 @@
     <div class="imagen">
 
         <div id="claim">
-            <h1>Tu agencia de Marketing Digital en Barcelona</h1>
-            <p>Sin un plan no podrás alcanzar tus metas. Tu decides los objetivos, nosotros te asesoramos para conseguirlos.</p>
+            <h1   class="aniview" data-av-animation="slideInLeft">Tu agencia de Marketing Digital en Barcelona</h1>
+            <p  class="aniview" data-av-animation="slideInLeft">Sin un plan no podrás alcanzar tus metas. Tu decides los objetivos, nosotros te asesoramos para conseguirlos.</p>
         </div>
 
         <div id="form">
@@ -63,7 +71,7 @@ Explícanos tu proyecto...</textarea><br>
     <main>
 
         <section class="diagonal">
-            <h2>Somos lo que hacemos</h2>
+            <h2 class="aniview" data-av-animation="flipInY">Somos lo que hacemos</h2>
 
             <div id="somos">
                 <div>
@@ -83,7 +91,7 @@ Explícanos tu proyecto...</textarea><br>
         <section id="servicios" class="diagonal">
             <div>
 
-                <h2>¿Por qué necesitas una estrategia SEO?</h2>
+                <h2 class="aniview" data-av-animation="flipInY">¿Por qué necesitas una estrategia SEO?</h2>
                 <p>Si quieres mejorar la visibilidad de tus productos o servicios y transmitir una mayor confianza a tus clientes potenciales, el posicionamento SEO conseguirá grandes beneficios a tu negocio</p>
                 <div class="tarjetas">
 
@@ -124,7 +132,7 @@ Explícanos tu proyecto...</textarea><br>
 
                 <section class="diagonal">
                     <div>
-                        <h2>Algunos clientes satisfechos</h2>
+                        <h2 class="aniview" data-av-animation="flipInY">Algunos clientes satisfechos</h2>
 
                         <div id="logos">
 
@@ -147,11 +155,11 @@ Explícanos tu proyecto...</textarea><br>
                 <section id="mapa">
 
 
-                    <h2>¿Dónde estamos?</h2>
+                    <h2 class="aniview" data-av-animation="flipInY">¿Dónde estamos?</h2>
                     <div>
 
                         <p>
-                            C/Pamplona 92 3º, 2ª | Barcelona |
+                            C/Pamplona 92 3º, 2ª <wbr>| Barcelona |<wbr>
 
                             <img src="https://image.flaticon.com/icons/png/512/9/9243.png" height=15px alt="Teléfono:">
                             936 28 57 87
@@ -176,8 +184,7 @@ Explícanos tu proyecto...</textarea><br>
 
     <!--- JAVASCRIPT!!!!! ---->
 
-    <script src="landing.js" language="javascript" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 
 
 </body>

@@ -6,7 +6,7 @@
 
 window.onscroll = function () {
     colormenu()
-};
+}
 
 function colormenu() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -21,13 +21,24 @@ function colormenu() {
 
 
 
-//FADE IN ESLOGAN PORTADA
+//ANIVIEW ANIMACIONES DE TITULOS
 
-$(document).ready(function(){
- 
-    $("#claim h1").fadeIn("slow");
-  
-});
+//INICIALIZACIÓN
+
+ $(document).ready(function(){
+            $('.aniview').AniView();
+        });
+
+//OPCIONES
+
+var options = {
+    animateThreshold: 150,
+    scrollPollInterval: 50
+}
+$('.aniview').AniView(options);
+
+
+
 
 
 

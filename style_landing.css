@@ -226,6 +226,8 @@
         /*Establecemos un grid para colocar la parte del formulario ¡Hay que cambiarlo para pantallas pequeñas!*/
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: 30% 30% 30%;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
     .tarjetas {
@@ -424,7 +426,7 @@ position: relative;
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
-        justify-self: right;
+        justify-self: center;
         width: 45vw;
             }
 
@@ -623,10 +625,10 @@ display: flex;
 
 #mapa button{
     background-color: black;
-    width: 50vw;
-    height: auto;
+    width: 46vw;
+    height: 35px;
 margin-bottom: 2em;
-    
+    font-size: 20px;
     
 }
 
